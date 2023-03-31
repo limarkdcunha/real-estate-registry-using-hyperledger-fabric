@@ -4,7 +4,7 @@
 
 In the project directory, in the client just run npm install.\
 It will install the node modules and run the react application\
-Then run ### `npm start`\
+Then run `npm start`\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ## Setting up backend and Hyperledger fabric
@@ -12,19 +12,19 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 1. Firstly setup the hyperledger fabric using fabric samples repository.
    To do so in your windows please refer [this link](https://www.codementor.io/@arvindmaurya/hyperledger-fabric-on-windows-1hjjorw68p)
 
-2. After setting up hyperledger fabric for the first time stop using ### `./network.sh up` to start the network/
+2. After setting up hyperledger fabric for the first time stop using `./network.sh up` to start the network/
    Instead follow the steps mentioned next./
-   Type ### `cd fabric-samples/test-network` in terminal (WSL Ubuntu terminal) to **test-network** subdirectory within your local clone of the **fabric-samples** repository./
-   Then ### `./network.sh down**`
-   Then type ### `./network.sh up createChannel -c mychannel -ca` to start the network and create the channel/
+   Type `cd fabric-samples/test-network` in terminal (WSL Ubuntu terminal) to **test-network** subdirectory within your local clone of the **fabric-samples** repository./
+   Then `./network.sh down**`
+   Then type `./network.sh up createChannel -c mychannel -ca` to start the network and create the channel/
 
    **Before this step please complete step **3** first.**
 
-   Then type ### `./network.sh deployCC -ccn basic -ccp ../asset-transfer-basic/chaincode-javascript/ -ccl javascript` to deploy the chaincode on our hyperledger network/
+   Then type `./network.sh deployCC -ccn basic -ccp ../asset-transfer-basic/chaincode-javascript/ -ccl javascript` to deploy the chaincode on our hyperledger network/
 
-   Then open a new terminal and type ### `cd asset-transfer-basic/application-javascript`/
+   Then open a new terminal and type `cd asset-transfer-basic/application-javascript`/
    Install required node modules using npm i/
-   Then type ### `node app.js` to start the server side application./
+   Then type `node app.js` to start the server side application./
 
    If you get no error during these steps then you nodejs app integrated with hyperledger fabric should be up and running on port 5000.
 
